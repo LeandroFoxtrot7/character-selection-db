@@ -1,0 +1,37 @@
+body {
+    background-color: black;
+}
+
+main {
+    max-width: 1360px;
+}
+
+.character-select {
+    display: flex;
+    justify-content: space-between;
+}
+
+.characters {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.character-list {
+    width: 620px;
+    margin: 50px 20px 20px 20px;
+}
+
+.characters li {
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.character-preview {
+    background-color: pink;
+    width: 620px;
+    margin: 50px 20px 20px 20px;
+    border-radius: 20px;
+}
