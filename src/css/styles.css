@@ -1,25 +1,31 @@
 body {
     background-color: black;
-}
-
-main {
-    max-width: 1360px;
+    background-image: url(../../images/bg.png);
+    position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .character-select {
+    max-width: 1360px;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .characters {
     display: grid;
     gap: 10px;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: repeat(4, 0.2fr);
 }
 
 .character-list {
     width: 620px;
-    margin: 50px 20px 20px 20px;
+    padding: 50px;
+}
+
+.character img {
+    width: 100px;
+    height: 100px;
 }
 
 .characters li {
@@ -29,9 +35,16 @@ main {
     border-radius: 20px;
 }
 
+button {
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 3px 2px 20px rgb(223, 5, 5);
+    transform: scale(1.1);
+}
+
 .character-preview {
-    background-color: pink;
-    width: 620px;
-    margin: 50px 20px 20px 20px;
-    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
 }
