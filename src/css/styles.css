@@ -47,11 +47,13 @@ button:hover {
 .character-preview {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
+/* A API apreseta imagens de diferentes dimensões então essa estilização é necessária */
 .character-preview img {
     display: none;
     padding-top: 20px;
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
 }
