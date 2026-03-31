@@ -48,3 +48,9 @@ button:hover {
     display: flex;
     flex-direction: column;
 }
+
+.character-preview img {
+    padding-top: 20px;
+    width: 500px;
+    height: 500px;
+}
