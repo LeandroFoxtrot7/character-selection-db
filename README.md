@@ -4,47 +4,38 @@
 
 Este é um projeto simples de um site web para seleção de personagens de Dragon Ball Z. O site permite visualizar uma lista de personagens icônicos e clicar neles para ver uma prévia da imagem usando a API do Dragon Ball.
 
-## Funcionalidades
+## 🛠️ Tecnologias
 
-- Lista de personagens: Goku, Vegeta, Gohan, Piccolo, Tenshinhan, Yamcha, Trunks... etc
-- Interação: Clique em um personagem para carregar e exibir uma prévia da imagem.
-- Integração com API: Utiliza a [Dragon Ball API](https://dragonball-api.com/) para buscar dados dos personagens.
+- `HTML` (estruturas e semântica)
+- `CSS` (layout, temas, responsividade)
+- `JavaScript` (interações, DOM, preview)
 
-## Tecnologias Utilizadas
+## 📁 Estrutura do projeto
 
-- **HTML**: Estrutura da página.
-- **CSS**: Estilização (reset.css e styles.css).
-- **JavaScript**: Lógica para interação e chamada à API.
+- `index.html`
+- `README.md`
+- `images/` (imagens locais dos personagens)
+- `js/index.js` (comportamento de seleção)
+- `src/css/reset.css` (reset de estilos)
+- `src/css/styles.css` (estilos principais)
+- `src/css/responsive.css` (ajustes mobile)
 
-## Como Executar
+## ▶️ Como executar
 
-1. Clone ou baixe o repositório.
-2. Abra o arquivo `index.html` em um navegador web moderno.
-3. Clique nas imagens dos personagens para ver as prévias.
+1. Clonar o repositório:
+   - `git clone <url-do-repo>`
+2. Abrir `index.html` no navegador.
+3. Clicar em um personagem para atualizar a pré-visualização.
 
-## Estrutura do Projeto
+## 🎯 Comportamento esperado
 
-```
-character-dbz/
-├── index.html          # Página principal
-├── README.md           # Este arquivo
-├── images/             # Pasta com imagens dos personagens
-├── js/
-│   └── index.js        # Script JavaScript
-└── src/
-    └── css/
-        ├── reset.css   # Reset de estilos
-        └── styles.css  # Estilos personalizados
-```
+- A lista de personagens é exibida em uma `<ul class="characters">`.
+- Cada item contém `<img data-name="...">` com atributo `alt`.
+- `js/index.js` detecta clique e atualiza `<section class="character-preview"> img`.
+- Pode incluir exibição de nome e estatísticas dependendo de implementação (tema atual: imagem local).
 
-## API Utilizada
+## 📜 Licença
 
-- [Dragon Ball API](https://dragonball-api.com/): Fornece dados e imagens dos personagens de Dragon Ball.
+Projeto aberto, uso e modificação liberados. Apenas mantenha créditos e histórico de contribuições quando publicar.
 
-## Contribuição
-
-Sinta-se à vontade para contribuir com melhorias, correções ou adições de novos personagens.
-
-## Licença
-
-Este projeto é de código aberto e pode ser usado livremente.
+> Observação: o código atual carrega imagens locais (`images/`) e não faz chamadas diretas a API externa, mas o modelo permite integração futura.
