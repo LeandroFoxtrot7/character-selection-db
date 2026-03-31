@@ -6,7 +6,7 @@ characterSelected.forEach(img => {
     img.addEventListener("click", async (event) => {
         try{
         const characterSelected = event.target.dataset.name;
-        const response = await fetch(`${baseURL}/characters?name=${characterSelected}`);
+        const response = await fetch(`${baseURL}/characters`);
         
         const data = await response.json();
 
